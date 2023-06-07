@@ -1,0 +1,2 @@
+#!/command/with-contenv bash
+python3 /ext/main_script.py $TOKEN $ZONEID $DNSID $DNSNAME $PRIMARYURL $BOTTOKEN $CHATID
