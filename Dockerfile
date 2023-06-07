@@ -12,7 +12,6 @@ RUN tar -C / -Jxpf /tmp/s6-overlay-x86_64.tar.xz
 ADD /ext /ext
 ADD /etc /etc
 RUN chmod -R 777 /etc/services.d
-RUN chmod -R 777 /etc/cont-init.d
 RUN chmod -R 777 /ext
 RUN pip install requests python-telegram-bot==${PTB_VERSION}
 ENTRYPOINT ["/init"]
